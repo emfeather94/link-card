@@ -9,23 +9,28 @@ html {
   box-sizing: inherit;
 }
 
-body {
+.link-card {
   max-width: 20em;
   padding: 1em;
   border: 3px solid #9a816d;
   border-radius: 8px;
   background: #dcd4cd;
+  font-size: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  color: #785439;
 }
 
-body:hover{
+.link-card:hover {
   max-width: 20em;
   padding: 1em;
   border: 3px solid #9a816d;
   border-radius: 8px;
   background: #cabdb2;
 }
-h2 {
-  font-family: "Dosis", sans-serif;
+
+.link-card h2 {
+  font-family: Dosis, sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
   color: #512200;
@@ -33,30 +38,42 @@ h2 {
   display: block;
 }
 
-section {
-  color: #785439;
-  font-size: 1rem;
-  display: inline-block;
-}
-
-
-ul {
+dl {
   list-style: none;
   font-size: .875rem;
+  display: grid;
+  grid-template: auto / 10em 1fr;
 }
 
-.link-card {
+dd {
+  margin: 0;
+  font-style: italic;
+}
 
+.list {
+  border-top: 3px solid #785439;
+  border-bottom: 3px solid #785439;
+  padding: 1em .75em 1em 0;
 }
 
 .btn {
-  font-family: "Dosis", sans-serif;
+  font-family: Dosis, sans-serif;
+  margin-left: 5em;
+  margin-right: 5em;
+  text-align: center;
   font-weight: bold;
   padding: .4em .75em .5em;
   background-color: #785439;
   text-decoration: none;
   color: #f0eee8;
   border-radius: 8px;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: #512200;
+  text-decoration: none;
+  color: #f0eee8;
+  border-radius: 8px;
   text-align: center;
-  display: inline-block;
 }
